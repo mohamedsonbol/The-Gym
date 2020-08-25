@@ -11,9 +11,24 @@ body{
 	margin: 0;
 }
 
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.container-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-items {
+	text-align: center;
+	padding: 3%;
+}
+
 h1{
 	text-align: center;
-	font-size: 180%;
+	font-size: 3rem;
 	line-height: 120%;
 	padding: 5% 0;
 }
@@ -33,25 +48,8 @@ p{
 	padding: 1%;
 }
 
-img{
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	width: auto;
-}
-
-.services-img {
-	width: 250px;
-	height: 250px;
-}
-
-.gym-img {
-	width: 750px;
-	height: 550px;
-}
-
 a{
-	color: #fff; /* White */
+	color: #fff; 
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -59,10 +57,15 @@ a{
 a:hover{
 	color: #fff;
 	text-decoration: underline;
+}
+ul {
+	list-style: none;
 
 }
 
+/* HEADER NAV */
 header{
+	padding: 0px;
 	background: #405580;
 	width: 100%;
 	height: 86px;
@@ -74,16 +77,22 @@ header{
 }
 
 #logo{
-	margin: 20px;
+	font-size: xx-large;
+}
+
+.brand {
 	float: left;
-	width: 200px;
-	height: 60px;
-	background: url(http://www.w3newbie.com/wp-content/uploads/the-gym.png) no-repeat center;
+	padding: 25px;
 }
 
 nav{
 	float: right;
-	padding: 35px 20px 20px 0;
+	padding: 25px;
+}
+
+nav ul li{
+	display: inline;
+	padding: 0px 20px;
 }
 
 #menu-icon{
@@ -97,102 +106,65 @@ a:hover#menu-icon{
 	border-radius: 4px 4px 0 0;
 }
 
-ul {
-	list-style: none;
-
-}
-
-nav ul li{
-	display: inline-block;
-	float: left;
-	padding: 10px;
-}
-
 .current{
 	color: #fff;
 	text-decoration-line: underline;
 }
-
-#doc{
-	margin: 40px 0;
+/* FEATURES SECTION */
+#Features {
+	background: #525252;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 5%;
+	color: #fff ;
 }
-
+.services-img {
+	width: 250px;
+	border-radius: 5%;
+}
+.text-just {
+	text-align: justify;
+}
+/* TIMING SECTION CSS */
+.gym-img {
+	width: 450px;
+	height: 250px;
+}
 #content{
 	margin: 0 auto;
 	max-width: 1140px;
 	margin-top: 110px;
 }
-
-.sliderWrapper{
-	max-width: 960px;
-	margin-top: 110px;
-	margin: 0 auto;
+.timing-title {
+	width: 100%;
+	font-size: 2em;
 }
-
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-
-  section {
-  	width: 29%;
-  	float: left;
-  	margin: 2%;
-  	text-align: center;
-  }
+.gym p {
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+}
+/* SLIDER CSS */
+#Wrapper{
+	max-width: 900px;
+	margin: 120px auto 50px auto;
+}
+.slick-prev:before, .slick-next:before {
+	color: #333333;
+	font-size: 30px;
+}
+.slick-prev {
+	left: -32px;
+}
+img{
+	width: 100%;
+}
 
   .clear{
   	clear: both;
   }
 
-  article{
-  	float: left;
-  	margin: 0 auto;
-  	width: 50%;
-  	height: auto;
-  	padding: 4%;
-  }
-
-  aside{
-  	float:right;
-  	margin: 0 auto;
-  	width: 35%;
-  	height: auto;
-  	padding: 3%;
-
-  }
-
-  ul.gym li{
-  	padding-left: 3%;
-  }
-
+ 
   footer{
   	background-color: #333333;
   	width: 100%;
