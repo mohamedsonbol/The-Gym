@@ -1,2 +1,2 @@
 # The-Gym
-Responsive website for practicing reasons (HTML5/CSS3)
+Responsive website built for practicing (HTML5/CSS3/Bootstrap4/Slick Slider)
