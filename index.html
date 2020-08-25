@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- META TAGS AND TITLE -->
 	<title>Gym LifeStyle | Welcome</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,46 +15,60 @@
 <body>
 	<!-- Header Code -->
 	<header>
-		<div class="container">
-			<div class="brand">
-				<a href="#" id="logo">TheGym</a>
+		<nav class="navbar navbar-expand-lg navbar-light bg-custo">
+			<a class="navbar-brand" href="#">TheGym</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				  	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  	<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Facility</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Plans</a>
+				</li>
+				<li class="nav-item">
+				  	<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+				  	<a class="nav-link" href="#" >Contact</a>
+				</li>
+			  </ul>
 			</div>
-			<nav class="nav">
-				<a href="#" id="menu-icon"></a>
-				<ul>
-					<li><a href="#" class="current">Home</a></li>
-					<li><a href="#">Trainers</a></li>
-					<li><a href="#">Plans</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Facility</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+		  </nav>
 	</header>
 
 	<!-- Slider Code -->
-	<div class="slickSlide" id="Wrapper">
-		<div><img src="img/gym-inside.jpg"></div>
-		<div><img src="img/deadlefts.jpg"></div>
+	<div class="container">
+		<div class="slideshow" id="Wrapper">
+			<div class="slide"><img src="img/gym-inside.jpg"></div>
+			<div class="slide"><img src="img/deadlefts.jpg"></div>
+		</div>
 	</div>
 
 	<!-- Featured Section -->
 	<div id="Features">
 		<h1>TheGym Features!</h1>
-		<div class="container-flex">
-			<div class="flex-items">
-				<img class="services-img" src="img/gymOne.jpg">
+		<div class="list-group list-group-horizontal">
+			<div class="list-group-item">
+				<img class="img-thumbnail" src="img/gymOne.jpg">
 				<h3>Best Trainers Around!</h1>
 				<p class="text-just">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum. Donec condimentum orci vel nulla hendrerit egestas. Duis nec nisl sollicitudin, aliquam massa in, consequat leo. Curabitur elit lorem, efficitur ac vestibulum et, egestas sed arcu. Phasellus tempor sapien orci, a mollis quam semper sit amet. Donec vitae libero ac quam suscipit dictum vulputate sit amet diam. Donec id dignissim mi, at fringilla lectus.</p>
 			</div>
-			<div class="flex-items">
-				<img class="services-img" src="img/gymTwo.jpg">
+			<div class="list-group-item">
+				<img class="img-thumbnail" src="img/gymTwo.jpg">
 				<h3>Local & Convenient</h1>
 				<p class="text-just">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum. Donec condimentum orci vel nulla hendrerit egestas. Duis nec nisl sollicitudin, aliquam massa in, consequat leo. Curabitur elit lorem, efficitur ac vestibulum et, egestas sed arcu. Phasellus tempor sapien orci, a mollis quam semper sit amet. Donec vitae libero ac quam suscipit dictum vulputate sit amet diam. Donec id dignissim mi, at fringilla lectus.</p>
 			</div>
-			<div class="flex-items">
-				<img class="services-img" src="img/gymThree.jpg">
+			<div class="list-group-item">
+				<img class="img-thumbnail" src="img/gymThree.jpg">
 				<h3>Check Us Out - 	Free!</h1>
 				<p class="text-just">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum. Donec condimentum orci vel nulla hendrerit egestas. Duis nec nisl sollicitudin, aliquam massa in, consequat leo. Curabitur elit lorem, efficitur ac vestibulum et, egestas sed arcu. Phasellus tempor sapien orci, a mollis quam semper sit amet. Donec vitae libero ac quam suscipit dictum vulputate sit amet diam. Donec id dignissim mi, at fringilla lectus.</p>
 			</div>
@@ -59,67 +76,80 @@
 	</div>
 	<div class="clear"></div>
 	<!-- GYM TIMEING SECTION -->
-	<div class="container-flex">
-		<div class="flex-items">
-			<img class="gym-img" src="img/gym-inside.jpg">
+	<div id="timing">
+		<div class="container">
+			<div class="row p-5">
+				<div class="col-8">
+					<img class="img-fluid" src="img/gym-inside.jpg">
+				</div>
+				<div class="col-4">
+					<h3 class="text-center">Groups Class Schedule:</h3>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-action"><p>Studio Cycling at 8 a.m. - 60 minutes</p></li>
+						<li class="list-group-item list-group-item-action"><p>Abs Sculpting at 12 p.m. - 30 minutes</p></li>
+						<li class="list-group-item list-group-item-action"><p>Power Yoga at 10 a.m. - 60 minutes</p></li>
+						<li class="list-group-item list-group-item-action"><p>Boot Camp at 2 p.m. - 30 minutes</p></li>
+						<li class="list-group-item list-group-item-action"><p>Butt Sculpting at 4 p.m. - 60 minutes</p></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<dev class="flex-items">
-			<h2 class="timing-title">Our Group Class Schedule:</h2>
-			<ul class="gym">
-				<li><p>Studio Cycling at 8 a.m. - 60 minutes</p></li>
-				<li><p>Abs Sculpting at 12 p.m. - 30 minutes</p></li>
-				<li><p>Power Yoga at 10 a.m. - 60 minutes</p></li>
-				<li><p>Boot Camp at 2 p.m. - 30 minutes</p></li>
-				<li><p>Butt Sculpting at 4 p.m. - 60 minutes</p></li>
-			</ul>
-		</dev>
 	</div>
 	<div class="clear"></div>
-	<div id="moreFeatures">
-		<div class="container-flex">
-			<div class="flex-items">
-				<img class="services-img" src="img/gymOne.jpg">
-				<h3>Ladies Section</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
-			</div>
-			<div class="flex-items">
-				<img class="services-img" src="img/gymTwo.jpg">
-				<h3>The Gym Floor</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
-			</div>
-			<div class="flex-items">
-				<img class="services-img" src="img/gymThree.jpg">
-				<h3>Free Weights</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
+
+	<!-- MORE FEATURES SECTION -->
+	<div id="moreFeatures" class="p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<img class="img-thumbnail" src="img/gymOne.jpg">
+					<h3>Ladies Section</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
+				</div>
+				<div class="col-4">
+					<img class="img-thumbnail" src="img/gymTwo.jpg">
+					<h3>The Gym Floor</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
+				</div>
+				<div class="col-4">
+					<img class="img-thumbnail" src="img/gymThree.jpg">
+					<h3>Free Weights</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales lacus ut arcu suscipit condimentum.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<div>
-			<h3><b>The Gym</b></h3>
-			<p><b>555-555-5555</b><br><br>
-			1700 sunset street<br>
-			Atlantis, Pa 19100<br>
-			trainer@thegym.com<br></p>
-		</div>
-		<div>
-			<h3>Connect With Us!</h3>
-			<ul class="social">
-				<li><a href=""><img src=""></a></li>
-				<li><a href=""><img src=""></a></li>
-				<li><a href=""><img src=""></a></li>
-				<li><a href=""><img src=""></a></li>
-			</ul>
-		</div>
-		<div>
-			<img src="">
+		<div class="container">
+			<div class="row justify-content-center text-center p-5">
+				<div class="col-4">
+					<h3 class="footer-title"><b>The Gym</b></h3>
+					<p><b>555-555-5555</b></p>
+					<p>Address: JBR, Dubai, UAE.</p>
+					<p>Email: trainer@thegym.com</p>
+				</div>
+				<div class="col-4">
+					<h3 class="footer-title">Connect With Us!</h3>
+					<ul class="social text-center">
+						<li><a href=""><img src="img/facebook.png"></a></li>
+						<li><a href=""><img src="img/instagram.png"></a></li>
+						<li><a href=""><img src="img/youtube.png"></a></li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<img class="img-thumbnail" src="img/gymOne.jpg">
+				</div>
+			</div>
 		</div>
 	</footer>
 	<footer class="second">
 		<p>&copy;Copyright - The Gym, 2017.</p>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<!-- JAVASCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
